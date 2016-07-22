@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Compiler>
+  <Settings>
+    <Norm>MAX</Norm>
+    <Conorm>MULTIPLY</Conorm>
+    <Parser>SyntacticAnalysisLR1</Parser>
+    <Lexer>TokenizerLexicalAnalysis</Lexer>
+  </Settings>
+  <RecTokens>
+    <RecToken id="1" name="Cliente" fregex="cliente" color=""/>
+    <RecToken id="2" name="Funcionario" fregex="[f|F][u|U][n|N][c|C][i|I][o|O][n|N][a|A][r|R][i|I][o|O]" color=""/>
+    <RecToken id="3" name="Produto" fregex="produto" color=""/>
+    <RecToken id="4" name="Venda" fregex="venda" color=""/>
+    <RecToken id="5" name="VendaProduto" fregex="VendaProduto" color=""/>
+
+
+    <RecToken id="6" name="Codigo" fregex="codigo" color=""/>
+    <RecToken id="7" name="Nome" fregex="nome" color=""/>
+    <RecToken id="8" name="CNPJ" fregex="cnpj" color=""/>
+    <RecToken id="9" name="Valor" fregex="valor" color=""/>
+
+
+    <RecToken id="10" name="Sendo" fregex="sendo" color=""/>
+
+    <RecToken id="11" name="Maior" fregex="maior" color=""/>
+
+    <RecToken id="12" name="Que" fregex="que" color=""/>
+
+    <RecToken id="13" name="Numero" fregex="[0-9]+" color=""/>
+
+    <!--<RecToken id="14" name="ValorStr" fregex="'[a-z]+'" color=""/>-->
+
+
+  </RecTokens>
+  <Grammar>
+    <Symbols>
+      <!-- Terminals -->
+      <Symbol id="1" name="Cliente" terminal="true" recTokenId="1" charValue=""/>
+      <Symbol id="2" name="Funcionario" terminal="true" recTokenId="2" charValue=""/>
+      <Symbol id="3" name="Produto" terminal="true" recTokenId="3" charValue=""/>
+      <Symbol id="4" name="Venda" terminal="true" recTokenId="4" charValue=""/>
+      <Symbol id="5" name="VendaProduto" terminal="true" recTokenId="5" charValue=""/>
+      <Symbol id="6" name="Codigo" terminal="true" recTokenId="6" charValue=""/>
+      <Symbol id="7" name="Nome" terminal="true" recTokenId="7" charValue=""/>
+      <Symbol id="8" name="CNPJ" terminal="true" recTokenId="8" charValue=""/>
+      <Symbol id="9" name="Valor" terminal="true" recTokenId="9" charValue=""/>
+
+      <Symbol id="14" name="Sendo" terminal="true" recTokenId="10" charValue=""/>
+      <Symbol id="15" name="Maior" terminal="true" recTokenId="11" charValue=""/>
+      <Symbol id="16" name="Que" terminal="true" recTokenId="12" charValue=""/>
+      <Symbol id="17" name="Numero" terminal="true" recTokenId="13" charValue=""/>
+
+      <!--<Symbol id="18" name="ValorStr" terminal="true" recTokenId="14" charValue=""/>-->
+
+      <!-- Variables -->
+      <Symbol id="10" name="Initial" terminal="false" recTokenId="" charValue="" variableInitial="true"/>
+      <Symbol id="11" name="Tabela" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="12" name="Campo" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="13" name="Condicao" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+    </Symbols>
+    <Rules>
+      <Rule id="1" typeName="Initial" sourceName="Initial" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[Initial=>Campo Tabela Condicao]]></Description>
+        <Destinys>
+          <Destiny name="Campo" var="campo"/>
+          <Destiny name="Tabela" var="tabela"/>
+          <Destiny name="Condicao" var="condicao"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="12" typeName="Initial" sourceName="Initial" pertinence="0.8" idRuleParent="" default="false">
+        <Description><![CDATA[Initial=>Tabela Condicao]]></Description>
+        <Destinys>
+          <Destiny name="Tabela" var="tabela"/>
+          <Destiny name="Condicao" var="condicao"/>
+        </Destinys>
+      </Rule>
+
+      <!--<Rule id="12" typeName="Initial" sourceName="Initial" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Initial=>Campo Tabela]]></Description>
+        <Destinys>
+          <Destiny name="Tabela" var="tabela"/>
+          
+        </Destinys>
+      </Rule>-->
+
+      <Rule id="2" typeName="Initial" sourceName="Initial" pertinence="0.8" idRuleParent="" default="true">
+        <Description><![CDATA[Initial=>Tabela]]></Description>
+        <Destinys>
+          <Destiny name="Tabela" var="tabela"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="3" typeName="Campo" sourceName="Campo" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Campo=>Codigo]]></Description>
+        <Destinys>
+          <Destiny name="Codigo" var="nomecampo"/>
+        </Destinys>
+      </Rule>
+      <Rule id="4" typeName="Campo" sourceName="Campo" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[Campo=>Nome]]></Description>
+        <Destinys>
+          <Destiny name="Nome" var="nomecampo"/>
+        </Destinys>
+      </Rule>
+      <Rule id="5" typeName="Campo" sourceName="Campo" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Campo=>CNPJ]]></Description>
+        <Destinys>
+          <Destiny name="CNPJ" var="nomecampo"/>
+        </Destinys>
+      </Rule>
+      <Rule id="6" typeName="Campo" sourceName="Campo" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Campo=>Valor]]></Description>
+        <Destinys>
+          <Destiny name="Valor" var="nomecampo"/>
+        </Destinys>
+      </Rule>
+
+
+      <Rule id="7" typeName="Tabela" sourceName="Tabela" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[Tabela=>Cliente]]></Description>
+        <Destinys>
+          <Destiny name="Cliente" var="nometabela"/>
+        </Destinys>
+      </Rule>
+
+
+
+      <Rule id="8" typeName="Tabela" sourceName="Tabela" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Tabela=>Funcionario]]></Description>
+        <Destinys>
+          <Destiny name="Funcionario" var="nometabela"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="9" typeName="Tabela" sourceName="Tabela" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Tabela=>Produto]]></Description>
+        <Destinys>
+          <Destiny name="Produto" var="nometabela"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="10" typeName="Tabela" sourceName="Tabela" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Tabela=>Venda]]></Description>
+        <Destinys>
+          <Destiny name="Venda" var="nometabela"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="11" typeName="Tabela" sourceName="Tabela" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Tabela=>VendaProduto]]></Description>
+        <Destinys>
+          <Destiny name="VendaProduto" var="nometabela"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="13" typeName="Condicao" sourceName="Condicao" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[Condicao=>sendo campo maior que valor]]></Description>
+        <Destinys>
+          <Destiny name="Sendo" var="sendo"/>
+          <Destiny name="Campo" var="campo"/>
+          <Destiny name="Maior" var="maior"/>
+          <Destiny name="Que" var="que"/>
+          <Destiny name="Numero" var="numero"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="15" typeName="Condicao" sourceName="Condicao" pertinence="0.8" idRuleParent="13" default="false">
+        <Description><![CDATA[Condicao=>sendo maior que valor]]></Description>
+        <Destinys>
+          <Destiny name="Sendo" var="sendo"/>
+          <Destiny name="Maior" var="maior"/>
+          <Destiny name="Que" var="que"/>
+          <Destiny name="Numero" var="numero"/>
+        </Destinys>
+      </Rule>
+      <Rule id="16" typeName="Condicao" sourceName="Condicao" pertinence="0.8" idRuleParent="13" default="false">
+        <Description><![CDATA[Condicao=>sendo numero maior que campo]]></Description>
+        <Destinys>
+          <Destiny name="Sendo" var="sendo"/>
+          <Destiny name="Numero" var="numero"/>
+          <Destiny name="Maior" var="maior"/>
+          <Destiny name="Que" var="que"/>
+          <Destiny name="Campo" var="campo"/>
+        </Destinys>
+      </Rule>
+    </Rules>
+  </Grammar>
+</Compiler>

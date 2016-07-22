@@ -1,0 +1,17 @@
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\CompilerWithFuzzy.GrammarFuzzy.dll.config
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\CompilerWithFuzzy.GrammarFuzzy.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\CompilerWithFuzzy.GrammarFuzzy.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\CompilerWithFuzzy.AutomaFuzzy.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\Microsoft.GLEE.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\Microsoft.GLEE.Drawing.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\Microsoft.GLEE.GraphViewerGDI.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\CompilerWithFuzzy.Core.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\Newtonsoft.Json.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\CompilerWithFuzzy.AutomaFuzzy.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\CompilerWithFuzzy.Core.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\bin\Debug\Newtonsoft.Json.xml
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.csprojResolveAssemblyReference.cache
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.Properties.Resources.resources
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.csproj.GenerateResource.Cache
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.pdb

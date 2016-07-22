@@ -1,0 +1,64 @@
+Loops
+      <Rule id="" typeName="SUBALoop" sourceName="SUBALoop" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[]]></Description>
+        <Destinys>
+          <Destiny name="SUBA" var="SUBA"/>
+          <Destiny name="SUBALoop" var="SUBALoop"/>
+        </Destinys>
+      </Rule>
+      <Rule id="" typeName="SUBALoop" sourceName="SUBALoop" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[]]></Description>
+        <Destinys>
+          <Destiny name="Empty" var="value"/>
+        </Destinys>
+      </Rule>
+	  
+	  
+	     <Rule id="" typeName="SUBALoop" sourceName="SUBALoop" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[]]></Description>
+        <Destinys>
+		<Destiny name="COMMA" var="COMMA"/>
+          <Destiny name="SUBA" var="SUBA"/>
+          <Destiny name="SUBALoop" var="SUBALoop"/>
+        </Destinys>
+      </Rule>
+      <Rule id="" typeName="SUBALoop" sourceName="SUBALoop" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[]]></Description>
+        <Destinys>
+          <Destiny name="Empty" var="value"/>
+        </Destinys>
+      </Rule>
+
+Vazio
+  <Rule id="" typeName="SUBAEmpty" sourceName="SUBAEmpty" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[]]></Description>
+        <Destinys>
+          <Destiny name="SUBA" var="SUBA"/>
+        </Destinys>
+      </Rule>
+      <Rule id="" typeName="SUBAEmpty" sourceName="SUBAEmpty" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[]]></Description>
+        <Destinys>
+          <Destiny name="Empty" var="empty"/>
+        </Destinys>
+      </Rule>
+
+Parenteses
+      <Rule id="" typeName="whileStatement" sourceName="whileStatement" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[]]></Description>
+        <Destinys>
+          <Destiny name="WHILE" var="while"/>
+		  <Destiny name="LPAREN" var="LPAREN"/>
+		  <Destiny name="expression" var="expression"/>
+		  <Destiny name="RPAREN" var="RPAREN"/>
+		  <Destiny name="statement" var="statement"/>
+        </Destinys>
+      </Rule>
+	  
+	  
+	  COLON :
+	  COLONCOLON ::
+	  COMMA ,
+	  SEMI ;
+	  LBRACK []
+	  

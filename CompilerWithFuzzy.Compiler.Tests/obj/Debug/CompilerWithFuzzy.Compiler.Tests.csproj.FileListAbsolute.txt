@@ -1,0 +1,17 @@
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\CompilerWithFuzzy.Compiler.Tests.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\CompilerWithFuzzy.Compiler.Tests.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\CompilerWithFuzzy.Compiler.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\CompilerWithFuzzy.Core.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\CompilerWithFuzzy.GrammarFuzzy.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\CompilerWithFuzzy.AutomaFuzzy.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\Newtonsoft.Json.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\CompilerWithFuzzy.Compiler.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\CompilerWithFuzzy.Core.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\CompilerWithFuzzy.GrammarFuzzy.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\CompilerWithFuzzy.AutomaFuzzy.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\bin\Debug\Newtonsoft.Json.xml
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\obj\Debug\CompilerWithFuzzy.Compiler.Tests.csprojResolveAssemblyReference.cache
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\obj\Debug\CompilerWithFuzzy.Compiler.Tests.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.Compiler.Tests\obj\Debug\CompilerWithFuzzy.Compiler.Tests.pdb

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Compiler>
+  <RecTokens>
+    <RecToken id="1" name="dog" fregex="dog" color="#7bf6b6"/>
+    <RecToken id="3" name="get" fregex="get" color="#f28686"/>
+    <RecToken id="5" name="ball" fregex="ball" color="#fbdb65"/>
+  </RecTokens>
+  <Grammar>
+    <Symbols>
+      <!-- Terminals -->
+      <Symbol id="1" name="dog" terminal="true" recTokenId="1" charValue=""/>
+      <Symbol id="3" name="get" terminal="true" recTokenId="3" charValue=""/>
+      <Symbol id="5" name="ball" terminal="true" recTokenId="5" charValue=""/>
+
+      <!-- Variables -->
+      <Symbol id="9" name="Initial" terminal="false" recTokenId="" charValue="" variableInitial="true"/>
+      <Symbol id="10" name="Other" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+    </Symbols>
+    <Rules>
+      <Rule id="1" typeName="Main" sourceName="Initial" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Initial=>dog get ball]]></Description>
+        <Destinys>
+          <Destiny name="dog" var="animal"/>
+          <Destiny name="get" var="action"/>
+          <Destiny name="Other" var="object"/>
+        </Destinys>
+      </Rule>
+      <Rule id="2" typeName="Other" sourceName="Other" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Other=>ball]]></Description>
+        <Destinys>
+          <Destiny name="ball" var="ball"/>
+        </Destinys>
+        <Compile></Compile>
+      </Rule>
+    </Rules>
+    <Compilers>
+      <Compile id="1" typeNameIn="Main">
+        <Code>
+          <![CDATA[Você mandou o <<animal.Value>> realizar a ação de <<action.Value>> <<Other.Compile>>]]>
+        </Code>
+      </Compile>
+      <Compile id="2" typeNameIn="Other">
+        <Code>
+          <![CDATA[com o objeto <<ball.value>>]]>
+        </Code>
+      </Compile>
+    </Compilers>
+  </Grammar>
+</Compiler>

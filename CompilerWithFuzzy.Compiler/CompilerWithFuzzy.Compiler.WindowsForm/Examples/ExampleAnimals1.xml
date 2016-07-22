@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Compiler>
+  <Settings>
+    <Norm>MAX</Norm>
+    <Conorm>MULTIPLY</Conorm>
+    <Parser>SyntacticAnalysisCYK</Parser>
+    <Lexer>TokenizerLexicalAnalysis</Lexer>
+  </Settings>
+  <RecTokens>
+    <RecToken id="1" name="space" fregex=" " color=""/>
+    <RecToken id="2" name="dog" fregex="dog" color=""/>
+    <RecToken id="3" name="get" fregex="get" color=""/>
+    <RecToken id="4" name="ball" fregex="ball" color=""/>
+  </RecTokens>
+  <Grammar norm="Multiply" conorm="Max">
+    <Symbols>
+      <!-- Terminals -->
+      <Symbol id="1" name="dog" terminal="true" recTokenId="2" charValue=""/>
+      <Symbol id="3" name="get" terminal="true" recTokenId="3" charValue=""/>
+      <Symbol id="5" name="ball" terminal="true" recTokenId="4" charValue=""/>
+      <!-- Variables -->
+      <Symbol id="9" name="Initial" terminal="false" recTokenId="" charValue="" variableInitial="true"/>
+
+      <Symbol id="11" name="A" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="12" name="B" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="13" name="C" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="13" name="D" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="14" name="E" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+    </Symbols>
+    <Rules>
+      <Rule id="1" typeName="Main" sourceName="Initial" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[Initial=>A D]]></Description>
+        <Destinys>
+          <Destiny name="A" var="a"/>
+          <Destiny name="D" var="d"/>
+        </Destinys>
+      </Rule>
+      <Rule id="11" typeName="Main" sourceName="Initial" pertinence="0.9" idRuleParent="" default="true">
+        <Description><![CDATA[Initial=>D A]]></Description>
+        <Destinys>
+          <Destiny name="D" var="d"/>
+          <Destiny name="A" var="a"/>
+        </Destinys>
+      </Rule>
+      <Rule id="2" typeName="D" sourceName="D" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[D=>B C]]></Description>
+        <Destinys>
+          <Destiny name="B" var="b"/>
+          <Destiny name="C" var="c"/>
+        </Destinys>
+      </Rule>
+      <Rule id="3" typeName="A" sourceName="A" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[A=>dog]]></Description>
+        <Destinys>
+          <Destiny name="dog" var="animal"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="4" typeName="B" sourceName="B" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[B=>get]]></Description>
+        <Destinys>
+          <Destiny name="get" var="action"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="5" typeName="C" sourceName="C" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[C=>ball]]></Description>
+        <Destinys>
+          <Destiny name="ball" var="object"/>
+        </Destinys>
+      </Rule>
+    </Rules>
+  </Grammar>
+</Compiler>

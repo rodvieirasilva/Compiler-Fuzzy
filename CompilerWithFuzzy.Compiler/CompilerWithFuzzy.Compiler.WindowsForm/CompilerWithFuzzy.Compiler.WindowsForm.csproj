@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23F43203-A5B3-4EE5-996A-B7FABD40686E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CompilerWithFuzzy.Compiler.WindowsForm</RootNamespace>
+    <AssemblyName>CompilerWithFuzzy.Compiler.WindowsForm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Msagl">
+      <HintPath>..\..\Librarys\Microsoft.Msagl.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl.Drawing">
+      <HintPath>..\..\Librarys\Microsoft.Msagl.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Msagl.GraphViewerGdi">
+      <HintPath>..\..\Librarys\Microsoft.Msagl.GraphViewerGdi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Examples\ExampleAnimals.cs" />
+    <Compile Include="FrmCompilerWithFuzzy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompilerWithFuzzy.Designer.cs">
+      <DependentUpon>FrmCompilerWithFuzzy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UCAutomaSyn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAutomaSyn.Designer.cs">
+      <DependentUpon>UCAutomaSyn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCColor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCColor.Designer.cs">
+      <DependentUpon>UCColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCGraphLex.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCGraphLex.Designer.cs">
+      <DependentUpon>UCGraphLex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCGraphSyn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCGraphSyn.Designer.cs">
+      <DependentUpon>UCGraphSyn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCGraphSynToCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCGraphSynToCode.Designer.cs">
+      <DependentUpon>UCGraphSynToCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCTableSyn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCTableSyn.Designer.cs">
+      <DependentUpon>UCTableSyn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmCompilerWithFuzzy.resx">
+      <DependentUpon>FrmCompilerWithFuzzy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UCAutomaSyn.resx">
+      <DependentUpon>UCAutomaSyn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCColor.resx">
+      <DependentUpon>UCColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCGraphLex.resx">
+      <DependentUpon>UCGraphLex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCGraphSyn.resx">
+      <DependentUpon>UCGraphSyn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCGraphSynToCode.resx">
+      <DependentUpon>UCGraphSynToCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCTableSyn.resx">
+      <DependentUpon>UCTableSyn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Examples\Example6.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\Example5.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\ExampleAnimals1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\ExampleJavaFIX.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\ExampleSQL1.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\ExampleAnimals4.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Examples\ExampleAnimals3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\ExampleAnimals2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Examples\ExampleAnimals1_LR1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Examples\ExampleTokens1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy.csproj">
+      <Project>{f566e904-5168-41f8-8023-142cd17d22b7}</Project>
+      <Name>CompilerWithFuzzy.AutomaFuzzy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CompilerWithFuzzy.Core\CompilerWithFuzzy.Core.csproj">
+      <Project>{6899bb89-6433-496f-864e-9915ce1ff24f}</Project>
+      <Name>CompilerWithFuzzy.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.csproj">
+      <Project>{e28907e4-6de4-422f-bbee-a185344c8c9d}</Project>
+      <Name>CompilerWithFuzzy.GrammarFuzzy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CompilerWithFuzzy.Compiler\CompilerWithFuzzy.Compiler.csproj">
+      <Project>{ef32dc21-1147-468a-9a3a-47f378a28308}</Project>
+      <Name>CompilerWithFuzzy.Compiler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

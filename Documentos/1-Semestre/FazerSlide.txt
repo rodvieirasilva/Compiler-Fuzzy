@@ -1,0 +1,41 @@
+Tomar cuidado
+	- Branco no branco
+	- Nome do orientador
+	- Simples
+	- 8 slides mais que suficientes
+	- Escrever pouco no slide
+
+Slide 1
+	- Título 
+	- Nome + RA
+	- Prof. Nome Orientador
+
+Slide 2
+	- Agenda / Objetivo
+	Objetivo:
+		Falar muito do ojetivo
+
+Slide 3
+	- Ferramentas, o que está sendo utilizado para cumprir os objetivos
+		- O quê você precisa, o quê você está utilizando
+
+Slide 4 
+	- Teoria
+
+Slide 4
+	- Projeto, até onde consegui chegar
+		- o quê foi feito
+		- como foi feito
+		- em qual estágio se encontra
+Slide 5
+	- Protótipo, telas, sequências
+
+Slide 6
+	-  Próximos passos
+
+Slide 7
+	- Contribuição, por quê seu trabalho é importante
+
+
+Slide 8
+	- Motivação

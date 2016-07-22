@@ -1,0 +1,9 @@
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\bin\Debug\CompilerWithFuzzy.AutomaFuzzy.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\bin\Debug\CompilerWithFuzzy.AutomaFuzzy.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\bin\Debug\CompilerWithFuzzy.Core.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\bin\Debug\Newtonsoft.Json.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\bin\Debug\CompilerWithFuzzy.Core.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\bin\Debug\Newtonsoft.Json.xml
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\obj\Debug\CompilerWithFuzzy.AutomaFuzzy.csprojResolveAssemblyReference.cache
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\obj\Debug\CompilerWithFuzzy.AutomaFuzzy.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\obj\Debug\CompilerWithFuzzy.AutomaFuzzy.pdb

@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CompilerWithFuzzy.AutomaFuzzy.Automa&lt;T&gt;" Collapsed="true">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAECAAAAAAAAAAAAAAAACAIAACAADAAACAA=</HashCode>
+      <FileName>Automa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompilerWithFuzzy.AutomaFuzzy.RecognitionFuzzy">
+    <Position X="1.5" Y="2.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>gAEABgggIEACAAABEAIAAQAAQAAEAAAABAgAAAAAAAA=</HashCode>
+      <FileName>RecognitionFuzzy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompilerWithFuzzy.AutomaFuzzy.State&lt;T&gt;" Collapsed="true">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAIAAAgAAEAAAAAAQAgAAAAIAAAAAgCAAAAgA=</HashCode>
+      <FileName>State.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompilerWithFuzzy.AutomaFuzzy.Transition&lt;T&gt;" Collapsed="true">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAEAAAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompilerWithFuzzy.AutomaFuzzy.Rules.AbstractRule&lt;T&gt;" Collapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAACAA=</HashCode>
+      <FileName>Rules\AbstractRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompilerWithFuzzy.AutomaFuzzy.Rules.SimpleExclusionRule&lt;T&gt;" Collapsed="true">
+    <Position X="6" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAQAAAAAAE=</HashCode>
+      <FileName>Rules\SimpleExclusionRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompilerWithFuzzy.AutomaFuzzy.Rules.SimpleIncludeRule&lt;T&gt;" Collapsed="true">
+    <Position X="6.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Rules\SimpleIncludeRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompilerWithFuzzy.AutomaFuzzy.Rules.SimpleListExclusionRule&lt;T&gt;" Collapsed="true">
+    <Position X="6.25" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAQAAAAAAE=</HashCode>
+      <FileName>Rules\SimpleListExclusionRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CompilerWithFuzzy.AutomaFuzzy.Rules.SimpleListIncludeRule&lt;T&gt;" Collapsed="true">
+    <Position X="6.25" Y="5.25" Width="2.25" />
+    <InheritanceLine Type="CompilerWithFuzzy.AutomaFuzzy.Rules.AbstractRule&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="5.25" Y="4.062" />
+        <Point X="5.25" Y="5.128" />
+        <Point X="7.375" Y="5.128" />
+        <Point X="7.375" Y="5.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Rules\SimpleListIncludeRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CompilerWithFuzzy.AutomaFuzzy.TypeCharEnum">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>TypeCharEnum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

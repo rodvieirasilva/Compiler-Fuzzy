@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Compiler>
+  <RecTokens>
+    <RecToken id="1" name="can" fregex="can" color="#7bf6b6"/>
+    <RecToken id="2" name="fish" fregex="fish" color="#7bf6b6"/>
+    <RecToken id="3" name="people" fregex="people" color="#f28686"/>
+  </RecTokens>
+  <Grammar>
+    <Symbols>
+      <!-- Terminals -->
+      <Symbol id="1" name="can" terminal="true" recTokenId="1" charValue=""/>
+      <Symbol id="2" name="fish" terminal="true" recTokenId="2" charValue=""/>
+      <Symbol id="3" name="people" terminal="true" recTokenId="3" charValue=""/>
+
+
+      <!-- Variables -->
+      <Symbol id="4" name="VP" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="5" name="Modal" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="6" name="Noun" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="7" name="Verb" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="8" name="Initial" terminal="false" recTokenId="" charValue="" variableInitial="true"/>
+    </Symbols>
+    <Rules>
+      <Rule id="1" sourceName="Initial" typeName="Initial" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[S -> Noun VP   [1.0]]]></Description>
+        <Destinys>
+          <Destiny name="Noun"/>
+          <Destiny name="VP"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="2" sourceName="VP" typeName="VP" pertinence="0,5" idRuleParent="" default="false">
+        <Description><![CDATA[VP -> Verb Noun [0.5]]]></Description>
+        <Destinys>
+          <Destiny name="Verb"/>
+          <Destiny name="Noun"/>
+        </Destinys>
+      </Rule>
+      <Rule id="3" sourceName="VP" typeName="VP" pertinence="0,5" idRuleParent="" default="false">
+        <Description><![CDATA[VP -> Modal Verb [0.5]]]></Description>
+        <Destinys>
+          <Destiny name="Modal"/>
+          <Destiny name="Verb"/>
+        </Destinys>
+      </Rule>
+      <Rule id="4" sourceName="Modal" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Modal -> can   [1]]]></Description>
+        <Destinys>
+          <Destiny name="can"/>
+        </Destinys>
+      </Rule>
+      <Rule id="5" sourceName="Noun" pertinence="0,3" idRuleParent="" default="false">
+        <Description><![CDATA[Noun -> can    [0.3]]]></Description>
+        <Destinys>
+          <Destiny name="can"/>
+        </Destinys>
+      </Rule>
+      <Rule id="6" sourceName="Noun" pertinence="0,3" idRuleParent="" default="false">
+        <Description><![CDATA[ Noun -> fish   [0.3]]]></Description>
+        <Destinys>
+          <Destiny name="fish"/>
+        </Destinys>
+      </Rule>
+
+
+      <Rule id="7" sourceName="Noun" pertinence="0,4" idRuleParent="" default="true">
+        <Description><![CDATA[Noun -> people [0.4]]]></Description>
+        <Destinys>
+          <Destiny name="people"/>
+        </Destinys>
+      </Rule>
+      <Rule id="8" sourceName="Verb" pertinence="0,1" idRuleParent="" default="false">
+        <Description><![CDATA[Verb -> can    [0.1]]]></Description>
+        <Destinys>
+          <Destiny name="can"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="9" sourceName="Verb" pertinence="0,8" idRuleParent="" default="false">
+        <Description><![CDATA[Verb -> fish   [0.8]]]></Description>
+        <Destinys>
+          <Destiny name="fish"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="10" sourceName="Verb" pertinence="0,1" idRuleParent="" default="false">
+        <Description><![CDATA[Verb -> people [0.1]]]></Description>
+        <Destinys>
+          <Destiny name="people"/>
+        </Destinys>
+      </Rule>
+
+    </Rules>
+  </Grammar>
+</Compiler>

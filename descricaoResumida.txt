@@ -1,0 +1,4 @@
+Desenvolvimento de uma framework para definição de compiladores com aplicações de lógica fuzzy em cada 
+parte do processo de compilação.
+Será disponibilizado uma ferramenta de fácil extensão e adaptação que realiza a conversão de um código fonte em um código de destino, 
+tolerando diversas tipo de falhas sintáticas e léxicas no código de origem.

@@ -1,0 +1,14 @@
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\bin\Debug\CompilerWithFuzzy.GrammarFuzzy.WindowsForm.exe.config
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\bin\Debug\CompilerWithFuzzy.GrammarFuzzy.WindowsForm.exe
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\bin\Debug\CompilerWithFuzzy.GrammarFuzzy.WindowsForm.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\bin\Debug\CompilerWithFuzzy.GrammarFuzzy.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\bin\Debug\Microsoft.Msagl.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\bin\Debug\Microsoft.Msagl.Drawing.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\bin\Debug\Microsoft.Msagl.GraphViewerGdi.dll
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\bin\Debug\CompilerWithFuzzy.GrammarFuzzy.pdb
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.WindowsForm.csprojResolveAssemblyReference.cache
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.WindowsForm.FormGrammar.resources
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.WindowsForm.Properties.Resources.resources
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.WindowsForm.csproj.GenerateResource.Cache
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.WindowsForm.exe
+D:\Google Drive\Facens-rvs\TCC\tcc-facens\trunk\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.WindowsForm\obj\Debug\CompilerWithFuzzy.GrammarFuzzy.WindowsForm.pdb

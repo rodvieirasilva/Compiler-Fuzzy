@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Compiler>
+  <Settings>
+    <Norm>MAX</Norm>
+    <Conorm>MULTIPLY</Conorm>
+    <Parser>SyntacticAnalysisLR1</Parser>
+    <Lexer>TokenizerLexicalAnalysis</Lexer>
+  </Settings>
+  <RecTokens>
+    <RecToken id="1" name="space" fregex=" " color=""/>
+    <RecToken id="2" name="dog" fregex="dog" color=""/>
+    <RecToken id="3" name="get" fregex="get" color=""/>
+    <RecToken id="4" name="ball" fregex="ball" color=""/>
+
+    <RecToken id="5" name="is" fregex="is" color=""/>
+    <RecToken id="6" name="to" fregex="to" color=""/>
+    <RecToken id="7" name="going" fregex="going" color=""/>
+    <RecToken id="8" name="the" fregex="the" color=""/>
+    <RecToken id="9" name="it" fregex="it" color=""/>
+    <RecToken id="10" name="go" fregex="go" color=""/>
+  </RecTokens>
+  <Grammar norm="Multiply" conorm="Max">
+    <Symbols>
+      <!-- Terminals -->
+      <Symbol id="1" name="dog" terminal="true" recTokenId="2" charValue=""/>
+      <Symbol id="3" name="get" terminal="true" recTokenId="3" charValue=""/>
+      <Symbol id="5" name="ball" terminal="true" recTokenId="4" charValue=""/>
+
+      <!-- Variables -->
+      <Symbol id="9" name="Initial" terminal="false" recTokenId="" charValue="" variableInitial="true"/>
+      <Symbol id="10" name="Other" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+    </Symbols>
+    <Rules>
+      <Rule id="1" typeName="Main" sourceName="Initial" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[Initial=>dog get ball]]></Description>
+        <Destinys>
+          <Destiny name="dog" var="animal"/>
+          <Destiny name="get" var="action"/>
+          <Destiny name="ball" var="object"/>
+        </Destinys>
+      </Rule>
+      <Rule id="2" typeName="Main" sourceName="Initial" pertinence="0.1" idRuleParent="1" default="false">
+        <Description><![CDATA[Initial=>dog get ball]]></Description>
+        <Destinys>
+          <Destiny name="get" var="action"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="3" typeName="Main" sourceName="Initial" pertinence="0.9" idRuleParent="1" default="false">
+        <Description><![CDATA[Initial=>get dog ball]]></Description>
+        <Destinys>
+          <Destiny name="get" var="action"/>
+          <Destiny name="dog" var="animal"/>
+          <Destiny name="ball" var="object"/>
+        </Destinys>
+      </Rule>
+    </Rules>
+  </Grammar>
+</Compiler>

@@ -1,0 +1,163 @@
+Aplicação Nova
+Adicionar Gramática Probabilística
+Adicionar LR(1)
+
+1
+Bom dia a todos,
+
+meu nome é Rodrigo Vieira, apresentarei meu trabalho de conclusão de concurso que tem como 
+título Framework pra construção de compiladores com conceitos Fuzzy.
+Meu orientador é o professor Marcos Mauricio
+
+2
+Essa é a agenda da apresentação, onde começarei a falar sobre os objetivos e possíveis aplicações do meu trabalho.
+Em seguida comentarei sobre as etapas do desenvolvimento e onde os conceitos fuzzy foram aplicados.
+Dando continuidade comentarei sobre as aplicações de exemplo e testes que foram desenvolvidas
+e finalmente faço uma conclusão e comento sobre os próximos passos das futuras versões da framework.
+
+3
+Do título do meu trabalho extraio os seus principais objetivos.
+Framework , conjunto de bibliotecas e ferramentas que auxiliam o desenvolvimento
+Construção Compiladores, essas funcionalidades é focado no desenvolvimento e definição de um compilador
+Porém existem diversas ferramentas que auxiliam no processo de compilação.
+O grande diferencial do trabalho é propor facilitar a utilização dos conceitos fuzzy que podem ser aplicados a um compilador.
+lógica fuzzy ou lógica nebulosa, é uma extensão da lógica clássica,
+ao invés de aceitar valores discretos de pertence ou não pertence,
+ela admite valores continuos de pertinência, entre 0 e 1.
+
+Com esses conceitos é possível desenvolver um compilador tolerante a erros.
+
+
+mas para quê um compilador tolerante a erros?
+
+4
+
+Para responder essa pergunta, comentarei sobre posíveis aplicações, como:
+1- Correção de erros para programadores iniciantes, é comum monitores ou professores de matérias iniciais de programação como algoritimos, 
+comentarem sobre a dificuldade dos alunos decorarem uma sintáxe, esquecem de ponto e vírgula, de e comercial, invertem as ordens. 
+Uma ferramenta que tolere e corrija ou sugira essas correções falicitaria e muito a aprendizagem desses alunos.
+2 - Acesso a informações em banco de dados, É comumn em empresas de grande porte, surgir a necessidade de um novo relatório. 
+muitas vezes existe um grande processo burocrático até uma fábrica de software realizar o desenvolvimento e disponibilizar a nova funcionalidade.
+com uma ferramenta com sintáxe facilitada e tolerante a erros de não programadores, 
+ o próprio usuário final consiga montar os seus relatórios.
+ 
+3 - Existem diversos contextos onde a lógica não importa e sim a síntaxe, como provas de certificação.
+com a ferramenta desenvolvida seria possível avaliar os conhecimentos do aluno, 
+com o grau de pertinência da lógica fuzzy é possível atribuir uma nota para o aluno.
+
+
+5
+
+a figura ao lado mostra as diversas etapas de um compilador. O foco da framework é a análise léxica, análise sintática
+e gerador de código.
+comentarei um pouco sobre essas duas análises
+
+6
+A análise léxica é a primeira etapa de um compilador,
+ela é resposável por montar uma lista de tokens, que é um conjunto de chave valor. essa sequencia é propagada para a próxima etapa.
+Já a análise sintática é responsável por validar se a ordem dos tokens está correta conforme a gramática e montar a árvore sintática,
+que possibilita a geração do código posteriormente;
+
+Nessa frase Compiladores são práticos. vemos bem as duas etapas.
+Análise léxica, Substantivo, Verbo e Adjetivo
+
+Análise sintática, oração, sujeito, verbo e predicado.
+Até agora comentei apenas dos compiladores convencionais.
+mas aonde os conceitos fuzzy podem ser aplicados?
+
+
+7
+Para responder isso, veremos a anáilse léxica fuzzy e análise sintática fuzzy.
+A análise léxica convecional utiliza-se de um automato, já a fuzzy utilizasse de um automato fuzzy,
+a principal diferença está no peso dos arcos admitidos. 
+Vemos o exemplo de um automato fuzzy para validar a palavra bau. porém poderia ser extendido o conceito para
+uma regex fuzzy. Temos os valores de transição mesmo se o cabeçote da fita de entrada não for a letra esperada.
+
+8
+Assim como na análise léxica utilizasse de um automato fuzzy,
+
+a análise sintática utilizasse de uma gramática fuzzy,
+que possui a seguinte definição:
+Vn, conjunto de simbolos não terminais
+Vt, conjunto de símbolos terminais
+P - conjunto de regras de produçaõ
+S - símbolo inicial
+A principal diferença está nas regras onde é possível notar a pertinência de cada regra.
+
+No projeto foi desenvolvido o analisador sintático LR1 modificado, pela sua maior abrangência e mais fácil adaptação
+Aqui do lado o algoritimo onde é necessário aplicar o novo conceito de norma no consumo de cada regra.
+Que nada mais é do que o conceito de união e intersecção extendidos da lógica clássica.
+
+9
+Com o estudo da análise sintática fuzzy, acabamos esbarrando na análise sintática estocástica.
+Ela possui uma definição muito parecida, conforme demonstra a figura,
+com a diferença que cada transição tem a sua probabilidade.
+
+ela utiliza algoritimos específicos como o CYK e Viterbi, que precisam que a 
+gramática estejam no formato de CHOMSKY.
+outra diferença conceitual é que o acumulo de regras se dá pela multiplicação,
+enquanto que em fuzzy é admitido qualquer norma.
+
+10
+Mostrarei agora tudo que falei, com os exemplos desenvolvidos.
+
+Primeiramente o automato fuzzy, a conversão de uma regex fuzzy para um automato fuzzy e o seu processamento.
+
+Agora a parte de análise sintática, vemos o exemplo aqui,
+
+a árvore sintática e as tabelas auxiliares do algoritimo LR1.
+
+
+Como comentei na monografia, foi desenvolvido um exemplo que utilize todos os conceitos apresentados,
+ então temos uma ferramenta de consulta de dados, 
+ onde mesmo errando as ordem das  
+ as palavras é realizado a compilação. Nesse caso convertendo essa linguagem mais natural para
+ SQL. e já executando no banco a versão corrigida.
+ 
+ Voltando para os slides, encontramos as seguintes respostas no forum do abutua.
+ é um site de aprendizado virtual, focado na plataforma JAVA.
+ Vemos aqui alguns erros básicos cometidos no primeiro exercício de curso para iniciantes.
+ 
+ a partir disso foi desenvolvido uma outra ferramenta.
+ 
+ primeiramente definiu-se a gramática do JAVA e algumas correções e importouse para a ferramenta.
+ 
+ 
+ Aqui é possível ver os mesmos erros descritos nos slides corrigidos pela ferramenta.
+ 
+ 11
+ Concluindo,
+ 
+ Vemos que o poder de um compilador é extendido com a aplicação de conceitos fuzzy.
+ e que a ferramenta desenvolvida pode auxiliar e muito nessa nova definição.
+ Ainda é importante frizar que enquanto os compiladores convecionais possuem
+ uma entrada e uma saída. com a utilização da framework temos uma nova configuração.
+ 1 entrada, que é o código de entrada
+ e 2 saídas, o código de destino e o código corrigido.
+ 
+ 12
+ Como próximos passos podemos citar a utilização de novos analisadores,
+ como o VITERBI
+ outras opções de norma e conorma, deixando o usuário mais com a missão de configurar a ferramenta e utilizar os recursos.
+ Desenvolver o produto de provas de certificação, acredito que tem um grande potencial.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

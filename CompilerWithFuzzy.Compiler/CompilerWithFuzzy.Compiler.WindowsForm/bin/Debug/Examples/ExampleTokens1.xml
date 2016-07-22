@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Tokens>
+  <Token id="1" name="Number" regex="0">
+  </Token>
+  <Token id="2" name="StartString" regex="&quot;">
+  </Token>
+  <Token id="2" name="EndString" regex="&quot;">
+  </Token>
+  <Token id="3" name="ScapeQuot" regex="\">
+  </Token>
+</Tokens>

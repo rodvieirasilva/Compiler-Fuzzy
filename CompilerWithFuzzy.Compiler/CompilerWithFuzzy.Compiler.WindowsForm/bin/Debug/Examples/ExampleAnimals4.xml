@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Compiler>
+  <RecTokens>
+    <RecToken id="1" name="dog" fregex="dog" color="#7bf6b6"/>
+    <RecToken id="2" name="cat" fregex="cat" color="#7bf6b6"/>
+    <RecToken id="14" name="rabbit" fregex="rabbit" color="#7bf6b6"/>
+    <RecToken id="15" name="bird" fregex="bird" color="#7bf6b6"/>
+    <RecToken id="16" name="horse" fregex="horse" color="#7bf6b6"/>
+    <RecToken id="3" name="get" fregex="get" color="#f28686"/>
+    <RecToken id="4" name="sleep" fregex="sleep" color="#f28686"/>
+    <RecToken id="8" name="eat" fregex="eat" color="#f28686"/>
+    <RecToken id="9" name="run" fregex="run" color="#f28686"/>
+    <RecToken id="10" name="jump" fregex="jump" color="#f28686"/>
+    <RecToken id="11" name="smile" fregex="smile" color="#f28686"/>
+    <RecToken id="5" name="ball" fregex="ball" color="#fbdb65"/>
+    <RecToken id="6" name="book" fregex="book" color="#fbdb65"/>
+    <RecToken id="7" name="clock" fregex="clock" color="#fbdb65"/>
+    <RecToken id="12" name="monitor" fregex="monitor" color="#fbdb65"/>
+    <RecToken id="13" name="pencil" fregex="pencil" color="#fbdb65"/>
+  </RecTokens>
+  <Grammar>
+    <Symbols>
+      <!-- Terminals -->
+      <Symbol id="1" name="dog" terminal="true" recTokenId="1" charValue=""/>
+      <Symbol id="2" name="cat" terminal="true" recTokenId="2" charValue=""/>
+      <Symbol id="6" name="rabbit" terminal="true" recTokenId="14" charValue=""/>
+      <Symbol id="7" name="bird" terminal="true" recTokenId="15" charValue=""/>
+      <Symbol id="8" name="horse" terminal="true" recTokenId="16" charValue=""/>
+
+      <Symbol id="3" name="get" terminal="true" recTokenId="3" charValue=""/>
+      <Symbol id="9" name="sleep" terminal="true" recTokenId="4" charValue=""/>
+      <Symbol id="10" name="eat" terminal="true" recTokenId="8" charValue=""/>
+      <Symbol id="11" name="run" terminal="true" recTokenId="9" charValue=""/>
+      <Symbol id="12" name="jump" terminal="true" recTokenId="10" charValue=""/>
+      <Symbol id="13" name="smile" terminal="true" recTokenId="11" charValue=""/>
+
+
+      <Symbol id="14" name="ball" terminal="true" recTokenId="5" charValue=""/>
+      <Symbol id="15" name="book" terminal="true" recTokenId="6" charValue=""/>
+      <Symbol id="16" name="clock" terminal="true" recTokenId="7" charValue=""/>
+      <Symbol id="17" name="monitor" terminal="true" recTokenId="12" charValue=""/>
+      <Symbol id="4" name="pencil" terminal="true" recTokenId="13" charValue=""/>
+
+      <!-- Variables -->
+      <Symbol id="6" name="Animal" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="7" name="Action" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="8" name="Object" terminal="false" recTokenId="" charValue="" variableInitial="false"/>
+      <Symbol id="9" name="Initial" terminal="false" recTokenId="" charValue="" variableInitial="true"/>
+    </Symbols>
+    <Rules>
+      <Rule id="1" sourceName="Initial" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Initial=>Animal Action Object]]></Description>
+        <Destinys>
+          <Destiny name="Animal"/>
+          <Destiny name="Action"/>
+          <Destiny name="Object"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="27" sourceName="Initial" pertinence="0,512" idRuleParent="1" default="false">
+        <Description><![CDATA[Initial=>Object Action Animal]]></Description>
+        <Destinys>
+          <Destiny name="Object"/>
+          <Destiny name="Animal"/>
+          <Destiny name="Action"/>
+        </Destinys>
+      </Rule>
+      <Rule id="26" sourceName="Initial" pertinence="0,512" idRuleParent="1" default="false">
+        <Description><![CDATA[Initial=>Object Animal Action]]></Description>
+        <Destinys>
+          <Destiny name="Object"/>
+          <Destiny name="Animal"/>
+          <Destiny name="Action"/>
+        </Destinys>
+      </Rule>
+      <Rule id="11" sourceName="Initial" pertinence="0,8" idRuleParent="1" default="false">
+        <Description><![CDATA[Initial=>Action Object]]></Description>
+        <Destinys>
+          <Destiny name="Action"/>
+          <Destiny name="Object"/>
+        </Destinys>
+      </Rule>
+      <Rule id="12" sourceName="Initial" pertinence="0,64" idRuleParent="1" default="false">
+        <Description><![CDATA[Initial=>Action]]></Description>
+        <Destinys>
+          <Destiny name="Action"/>
+        </Destinys>
+      </Rule>
+      <Rule id="20" sourceName="Initial" pertinence="0,64" idRuleParent="1" default="false">
+        <Description><![CDATA[Initial=>Object]]></Description>
+        <Destinys>
+          <Destiny name="Object"/>
+        </Destinys>
+      </Rule>
+      <Rule id="21" sourceName="Initial" pertinence="0,64" idRuleParent="1" default="false">
+        <Description><![CDATA[Initial=>Animal Action]]></Description>
+        <Destinys>
+          <Destiny name="Animal"/>
+          <Destiny name="Action"/>
+        </Destinys>
+      </Rule>
+
+
+      <Rule id="2" sourceName="Animal" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[Animal=>dog]]></Description>
+        <Destinys>
+          <Destiny name="dog"/>
+        </Destinys>
+      </Rule>
+      <Rule id="3" sourceName="Animal" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Animal=>cat]]></Description>
+        <Destinys>
+          <Destiny name="cat"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="17" sourceName="Animal" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Animal=>rabbit]]></Description>
+        <Destinys>
+          <Destiny name="rabbit"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="18" sourceName="Animal" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Animal=>bird]]></Description>
+        <Destinys>
+          <Destiny name="bird"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="19" sourceName="Animal" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Animal=>horse]]></Description>
+        <Destinys>
+          <Destiny name="horse"/>
+        </Destinys>
+      </Rule>
+      <Rule id="4" sourceName="Action" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[Action=>get]]></Description>
+        <Destinys>
+          <Destiny name="get"/>
+        </Destinys>
+      </Rule>
+      <Rule id="10" sourceName="Action" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Action=>sleep]]></Description>
+        <Destinys>
+          <Destiny name="sleep"/>
+        </Destinys>
+      </Rule>
+      <Rule id="6" sourceName="Action" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Action=>eat]]></Description>
+        <Destinys>
+          <Destiny name="eat"/>
+        </Destinys>
+      </Rule>
+      <Rule id="7" sourceName="Action" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Action=>run]]></Description>
+        <Destinys>
+          <Destiny name="run"/>
+        </Destinys>
+      </Rule>
+      <Rule id="8" sourceName="Action" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Action=>jump]]></Description>
+        <Destinys>
+          <Destiny name="jump"/>
+        </Destinys>
+      </Rule>
+      <Rule id="9" sourceName="Action" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Action=>smile]]></Description>
+        <Destinys>
+          <Destiny name="smile"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="5" sourceName="Object" pertinence="1" idRuleParent="" default="true">
+        <Description><![CDATA[Object=>ball]]></Description>
+        <Destinys>
+          <Destiny name="ball"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="13" sourceName="Object" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Object=>book]]></Description>
+        <Destinys>
+          <Destiny name="book"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="14" sourceName="Object" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Object=>clock]]></Description>
+        <Destinys>
+          <Destiny name="clock"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="15" sourceName="Object" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Object=>monitor]]></Description>
+        <Destinys>
+          <Destiny name="monitor"/>
+        </Destinys>
+      </Rule>
+
+      <Rule id="16" sourceName="Object" pertinence="1" idRuleParent="" default="false">
+        <Description><![CDATA[Object=>pencil]]></Description>
+        <Destinys>
+          <Destiny name="pencil"/>
+        </Destinys>
+      </Rule>
+
+    </Rules>
+  </Grammar>
+</Compiler>

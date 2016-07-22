@@ -1,0 +1,17 @@
+08:00	Diego de Oliveira Vinter	Aplicativo baseado em Web Semântica para Monitoramento de Preços em E-commerce – BANCA FINAL	Leles	
+09:00	Amanda de Moraes Silva	Tecnologia Assistiva auxiliando deficientes auditivos no trânsito	Leles	Sidney
+10:00	Celso Marigo Jr.	TCCFacil: Sistema para elaboração de TCC e IC colaborativo, on-line e fácil	Leles	Andréa
+08:00	Marcel Malke Stigliani	Desenvolvimento de Plataforma de Integração Acadêmica	Carlos Augusto	Breda
+08:30	Rafael Isquierdo Miron	Conversão do padrão OBD para MTConnect para sistema de diagnósticos automotivos	Breda	Rafael da Paz
+10:00	Richard Mondin Silva	Arena de Robôs - Gamificação de pseudocódigo para suporte na iniciação em lógica de programação	Wilson	Caversan
+10:30	Victor Damazio Costa e Souza	Jogo Beat ‘em up	Caversan	Wilson
+08:00	Felipe Castelli	Sistema de Detecção de Vazamento em Rede Hidráulica	Sidney	Rafael da Paz
+08:30	Wendel Kenji Kitano	Implementação de um firewall para instituições de ensino utilizando iptables e squid	Ronaldo	Machado
+09:30	William Malheiros Evangelista	Análise de dados para Leilão Reverso	Glauco	Talita
+10:00	Luis Eduardo Silva Ribeiro	Transferência da dados entre mesa digital e dispositivos móveis, através de movimentos, utilizando Kinect	
+08:00	Bruno Cesar Liberato	Acompanhamento de Meios de Transporte em Tempo Real Utilizando SignalR	MM	Narcizo
+10:30	Guilherme Augusto Conti	Ambiente para Gestão de Projetos Acadêmicos	Leles	Machado
+09:30	Eduardo Correa	Gamificação para o processo de Scrum	Leles	M. Angelica
+08:30	Bruno Correa Frutuoso	Estudo científico sobre “Internet das Coisas”	MM	Sidney
+09:00	Rodrigo Vieira da Silva	Compilador com regras fuzzy	MM	Renata
+09:30	Luiz Fernando Jacção	Alta disponibilidade, Segurança, Cache e Tolerância a falha em Banco de dados embutido através de 

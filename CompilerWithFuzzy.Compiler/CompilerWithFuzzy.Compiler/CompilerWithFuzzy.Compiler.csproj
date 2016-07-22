@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF32DC21-1147-468A-9A3A-47F378A28308}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CompilerWithFuzzy.Compiler</RootNamespace>
+    <AssemblyName>CompilerWithFuzzy.Compiler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompilerFuzzy.cs" />
+    <Compile Include="CompilerXmlParser.cs" />
+    <Compile Include="DataStruct\Edge.cs" />
+    <Compile Include="DataStruct\Graph.cs" />
+    <Compile Include="DataStruct\Node.cs" />
+    <Compile Include="DataStruct\GraphPath.cs" />
+    <Compile Include="Lex\TokenizerLexicalAnalysis.cs" />
+    <Compile Include="Lex\FullLexicalAnalysis.cs" />
+    <Compile Include="Lex\Base\AbstractLexicalAnalysis.cs" />
+    <Compile Include="Lex\RecognitionToken.cs" />
+    <Compile Include="Lex\Token.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Syn\CustomValueStateNodeLR1.cs" />
+    <Compile Include="Syn\ParseTree\FixSyn.cs" />
+    <Compile Include="Syn\KeyDicCYK.cs" />
+    <Compile Include="Syn\Operation.cs" />
+    <Compile Include="Syn\ParseTree\NodeToTreeContainer.cs" />
+    <Compile Include="Syn\ParseTree\Container.cs" />
+    <Compile Include="Syn\RuleProductionState.cs" />
+    <Compile Include="Syn\SyntacticAnalysisAbstract.cs" />
+    <Compile Include="Syn\SyntacticAnalysisCYK.cs" />
+    <Compile Include="Syn\SyntacticAnalysisLR1.cs" />
+    <Compile Include="Syn\ValueState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy\CompilerWithFuzzy.AutomaFuzzy.csproj">
+      <Project>{f566e904-5168-41f8-8023-142cd17d22b7}</Project>
+      <Name>CompilerWithFuzzy.AutomaFuzzy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CompilerWithFuzzy.Core\CompilerWithFuzzy.Core.csproj">
+      <Project>{6899bb89-6433-496f-864e-9915ce1ff24f}</Project>
+      <Name>CompilerWithFuzzy.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy\CompilerWithFuzzy.GrammarFuzzy.csproj">
+      <Project>{e28907e4-6de4-422f-bbee-a185344c8c9d}</Project>
+      <Name>CompilerWithFuzzy.GrammarFuzzy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagramCompilerLex.cd" />
+    <None Include="ClassDiagramCompiler.cd" />
+    <None Include="ClassDiagramCompilerSyn.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
